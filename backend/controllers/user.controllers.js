@@ -3,7 +3,7 @@ import User from "../models/user.model.js"
 
 export const getCurrentUser = async (req, res) => {
    try {
-      if (!req.user) {
+      if (!req.user._id) {
          return res.status(400).json({ message: "Login First" })
       }
       res.status(200).json({ message: "Get Profile", user: req.user })
