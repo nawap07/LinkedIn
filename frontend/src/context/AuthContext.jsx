@@ -5,7 +5,7 @@ export const authContext = createContext({});
 
 
 const AuthContext = ({ children }) => {
-    const serverUrl = "http://localhost:3000"
+    const serverUrl = "https://linkedin-w07k.onrender.com"
     const value = {
         serverUrl
     }
