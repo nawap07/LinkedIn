@@ -16,7 +16,7 @@ const server = http.createServer(app);
 
 export const io = new Server(server, {
     cors: ({
-        origin: "https://linkedin-frontend-rw5c.onrender.com",
+        origin: "https://linkedin-frontend-rrig.onrender.com",
         methods: ["GET", "POST"],
         credentials: true
     })
@@ -27,7 +27,7 @@ dotenv.config();
 const port = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: "https://linkedin-frontend-rw5c.onrender.com",
+    origin: "https://linkedin-frontend-rrig.onrender.com",
     credentials: true
 }))
 app.use(expres.json());
