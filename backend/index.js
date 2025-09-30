@@ -26,7 +26,7 @@ dotenv.config();
 const port = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: "https://linkedin-frontend-rrig.onrender.com",
+    origin: ["http://localhost:5173","https://linkedin-frontend-rrig.onrender.com"],
     credentials: true
 }))
 app.use(expres.json());
