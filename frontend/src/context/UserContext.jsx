@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 export const userContext = createContext({})
 import { io } from "socket.io-client"
 
-const socket = io("https://linkedin-w07k.onrender.com");
+const socket = io("https://linkedin-backend-lz2h.onrender.com");
 
 const UserContext = ({ children }) => {
     const [userData, setUserData] = useState(null);
