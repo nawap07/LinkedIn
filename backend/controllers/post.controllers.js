@@ -1,7 +1,7 @@
 import uploadOnCloudinary from "../config/cloudinary.js";
 import { io } from "../index.js";
 import Notification from "../models/notification.model.js";
-import Post from "../models/post.model.js";
+import Post from "../models/post.model.js"
 
 export const createPost = async (req, res) => {
     try {
